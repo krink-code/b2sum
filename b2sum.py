@@ -6,8 +6,12 @@ if sys.version_info[0] < 3:
 
 from hashlib import blake2b, blake2s
 if sys.argv[1:]:
+    is_64bits = sys.maxsize > 2**32
     for arg in sys.argv[1:]:
-        blake = blake2b(digest_size=20)
+        if is_64bits:
+            blake = blake2b(digest_size=20)
+        else:
+            blake = blake2s(digest_size=20)
         try:
             _file = open(arg, 'rb').read()
         except FileNotFoundError as e:
