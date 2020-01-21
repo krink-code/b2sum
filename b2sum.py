@@ -13,7 +13,8 @@ if sys.argv[1:]:
         else:
             blake = blake2s(digest_size=20)
         try:
-            _file = open(arg, 'rb').read()
+            with open(arg, 'rb') as bfile:
+                _file = bfile.read()
         except FileNotFoundError as e:
             print(e)
             continue
