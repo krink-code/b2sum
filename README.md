@@ -35,4 +35,12 @@ the hardware architecture is_64bits.
 Version: 0.0.1
 ```
 
+---
+
+```
+python3
+>>> import b2sum
+>>> b2sum.b2checksum('blake2')
+'ad55cb15ca0ac08f485292537aca1ecdf6bb2c3c'
+```
 
