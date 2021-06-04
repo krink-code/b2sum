@@ -4,7 +4,7 @@
 ```
 pip install b2sum
 ```
-
+https://pypi.org/project/b2sum/
 ---
 
 blake2b, blake2s
