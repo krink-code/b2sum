@@ -14,7 +14,7 @@ setup(
     entry_points = {
         "console_scripts": ['b2sum = b2sum.b2sum:main']
         },
-    version = '0.0.1-0',
+    version = '1.0.0',
     description = "b2sum blake2",
     long_description = "Python command line tool for b2sum.",
     author = "Karl Rink",

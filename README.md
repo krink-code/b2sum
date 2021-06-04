@@ -11,7 +11,7 @@ https://pypi.org/project/b2sum/
 blake2b, blake2s
 ```
 $ ./b2sum.py b2sum.py
-66f60937458282efbb8f7629823e487fc83843da  b2sum.py
+b8781edb8f638099706a1d8e106a510f853e3f12  b2sum.py
 ```
 ---
 
@@ -32,7 +32,7 @@ With no FILE, or when FILE is -, read standard input.
 The sums are computed using blake2b or blake2s, depending on
 the hardware architecture is_64bits.
 
-Version: 0.0.1
+Version: 1.0.0
 ```
 
 ---

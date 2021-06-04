@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-__version__ = '0.0.1'
+__version__ = '1.0.0'
 
 import sys
 if sys.version_info[0] < 3:
@@ -67,14 +67,6 @@ def main():
             sys.exit(0)
 
         else:
-            #import threading
-            #threads = []
-            #for arg in sys.argv[1:]:
-            #    t = threading.Thread(target=b2sum, args=(arg,))
-            #    t.start()
-            #    threads.append(t)
-            #for t in threads:
-            #    t.join()
 
             for arg in sys.argv[1:]:
                 print(b2sum(arg) + '  ' + arg)
